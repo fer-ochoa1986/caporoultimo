@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caporo</title>
+    <link rel="icon" href="Fotos/caporo.ico">
+    <link rel="stylesheet" href="CSS/caporo.css">
+    <script  src="caporo.js"></script>
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+</head>
+<body>
+    <header>
+     <!-- este div es para la creacion del menu hambuerguesa-->   
+    <div class="contenedor">
+        <button id="menu">
+            <span id="menu-abrir"> &#9776 </span>
+            <span id="menu-cerrar"> X </span>
+        </button>
+        <!--es para las secciones de la pagina-->
+        <nav>
+
+            <ul>
+             <li><a href="index.html"> inicio</a></li>
+             <li><a href="HTML/manicura.html"> manicura</a></li>
+             <li><a href="HTML/depilacion.html"> depilacion</a></li>
+             <li><a href="HTML/producto.html"> productos</a></li>
+             <li><a href="HTML/contacto.html"> contacto</a></li>
+             <li><a href="HTML/ubicacion.html"> ubicacion</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!--en el main almacena cada seccion con toda la informacion correspondiente-->
+    <main class="contenedorSec">
+        <section class="clase0" id="inicio" class="pagina" url="enlace-inicio">
+            <h1 class="animate__animated animate__heartBeat">Caporo</h1>
+            <img class="d-block w-100" src="logocaporo.ico" width="500"
+        </section>
+        <section class="oculto">
+        <iframe src="HTML/manicura.html"></iframe>
+        <iframe src="HTML/depilacion.html"></iframe>
+        <iframe src="HTML/producto.html"></iframe>
+        <iframe src="HTML/contacto.html"></iframe>
+        <iframe src="HTML/ubicacion.html"></iframe>
+        </section>
+         <section>
+            <!-- Iconos de las redes sociales. Falta conectar con la página de la empresa -->
+         <p>Nos podés encontrar por las siguientes vías de contacto:</p>
+         <a href="http://www.facebook.com" target="_blank"><img src="fotos/facebook.png" alt="Facebook" width="40"></a>
+         <a href="http://www.gmail.com" target="_blank"><img src="fotos/gmail.png" alt="Gmail" width="40"></a>
+         <a href="http://www.instagram.com" target="_blank"><img src="fotos/instagram.png" alt="Instagram" width="40"></a>
+         <a href="http://www.tik-tok.com" target="_blank"><img src="fotos/tik-tok.png" alt="TikTok" width="40"></a>
+          <a href="http://www.whatsapp.com" target="_blank"><img src="fotos/whatsapp.png" alt="WhatsApp" width="40"></a>
+         </section>
+
+        <section>
+            <footer>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
