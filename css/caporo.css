@@ -1,0 +1,171 @@
+/*creando menu hamburguesa*/
+header div.contenedor { 
+place-content: flex-start;
+}
+header div.contenedor nav{
+    width: 100%;
+    display: flex;
+    place-content: space-between;
+}
+#menu,#menu-check{
+ display: none;
+}
+@media  screen and (max-width: 900px)  {
+    header div.menu, header div.menu ul,header div.menu ul li {
+        display: inline;
+    }
+    
+}
+header div.contenedor{
+    width: 100%;
+    display: inline;
+}
+@media screen and (max-width: 700px) {
+    header h1{
+        margin: 0;
+    
+    }
+    header h1 a {
+        padding: 0%;
+
+    }
+}
+header div.contenedor{
+    display: flex;
+    place-content: space-between;
+}
+header div.contenedor nav{
+    display: none;
+}
+header div.contenedor nav.visible{
+    display: block;
+}
+#menu{
+    display: block;
+    color: blue;
+    background-color: #0f130c;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 3px solid ;
+    border-radius: 0.3em;
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 9999;
+}
+#menu :hover{
+    color: #0f130c;
+    background-color: white;
+}
+#menu-cerrar{
+    display: none;
+}
+#menu.salir #menu-abrir{
+    display: none;
+}
+#menu.salir #menu-cerrar{
+    display:block;
+
+}
+
+header div.contenedor nav{
+    position: absolute;
+    top: 0%;
+    right: 0.5em;
+    height: 100%;
+    background-color: #0f130c;
+    padding-top: 0.5em;
+    padding-right: 0.8em;
+    opacity: 0.8;
+    color: white;
+    
+
+}
+/*usando grid para separar seciones*/
+.contenedorSec{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr,2fr;
+    grid-row: 2fr, 4fr, 2fr, 2fr;
+    grid-template-areas: 
+      'header header'
+      'izq main'
+      'publi main'
+      'footer footer';
+    height: 100vh; 
+}
+
+.clase0 {background-color: white ; 
+    grid-area: header;}
+    .clase0{
+        background-color: white;
+        text-align: center;
+        font-family: unset;
+        font-size: 90%;
+        border: 0;
+        margin: 0;
+    }
+.oculto {
+    display: none;
+    
+}
+/* hacer el carrousel*/
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-slide.active {
+    opacity: 1;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+@media screen and (max-width: 700px) {
+ .contenedor {
+    grid-template-areas: 
+      'header header'
+       'main main'
+       'main main'
+       'main main'
+       'main main'
+       'publi izq'
+       'footer footer';
+    }
+}
+
+    @media screen and (max-width: 460px) {
+      .contenedor{
+        grid-template-areas: 
+          'header header'
+          'main main'
+          'main main'
+          'main main'
+          'main main'
+          'izq izq'
+          'footer footer';
+        }
+    }
+    
+.clase5{
+    grid-area: 'footer';
+}
+.clase6{
+    background-color: #f03687;
+    grid-area: auto;
+    display: inline;
+}

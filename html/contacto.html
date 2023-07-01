@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="icon" href="fotos/logocaporo.ico">
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="JS/caporo.js"></script>
+</head>
+<body>
+    <header>
+        <!-- este div es para la creacion del menu hambuerguesa-->   
+       <div class="contenedor">
+           <button id="menu">
+               <span id="menu-abrir"> &#9776 </span>
+               <span id="menu-cerrar"> X </span>
+           </button>
+           <!--es para las secciones de la pagina-->
+           <nav>
+   
+               <ul>
+                <li><a href="index.html"> inicio</a></li>
+                <li><a href="HTML/manicura.html"> manicura</a></li>
+                <li><a href="HTML/depilacion.html"> depilacion</a></li>
+                <li><a href="HTML/producto.html"> productos</a></li>
+                <li><a href="HTML/contacto.html"> contacto</a></li>
+                <li><a href="HTML/ubicacion.html">ubicacion</a></li>
+               </ul>
+           </nav>
+       </div>
+    <section class="clase4" id="contacto" class="pagina" url="enlace-contacto">
+        <h2>Contacto</h2>
+        <P>Deja aqui tu comentario</P>
+    
+    <!--formulario para la validacion de datos-->
+       
+    <form 
+    action="https://formspree.io/f/mayzzjve"
+    method="POST">
+    <label>
+      <p>ingrese su nombre</p>
+     <input type="nombre" name="nombre">
+    <label>
+     <p>ingrese su mail</p>
+    <input type="email" name="email">
+    </label>
+    <label>
+    <p>deje su mensaje</p>
+    <textarea name="message"></textarea>
+    </label>
+    
+    <button type="submit">enviar</button>
+    </form>
+    
+       </form >
+        
+   <section>
+            <!-- Iconos de las redes sociales. Falta conectar con la página de la empresa -->
+         <p>Nos podés encontrar por las siguientes vías de contacto:</p>
+         <a href="http://www.facebook.com" target="_blank"><img src="fotos/facebook.png" alt="Facebook" width="40"></a>
+         <a href="http://www.gmail.com" target="_blank"><img src="fotos/gmail.png" alt="Gmail" width="40"></a>
+         <a href="http://www.instagram.com" target="_blank"><img src="fotos/instagram.png" alt="Instagram" width="40"></a>
+         <a href="http://www.tik-tok.com" target="_blank"><img src="fotos/tik-tok.png" alt="TikTok" width="40"></a>
+          <a href="http://www.whatsapp.com" target="_blank"><img src="fotos/whatsapp.png" alt="WhatsApp" width="40"></a>
+     </section>
+        <footer>
+             
+        </footer>
+    </section>   
+</body>
+</html>
