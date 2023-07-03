@@ -1,0 +1,94 @@
+/*creando menu hamburguesa*/
+header div.contenedor { 
+    place-content: flex-start;
+    }
+    header div.contenedor nav{
+        width: 100%;
+        display: flex;
+        place-content: space-between;
+    }
+    #menu,#menu-check{
+     display: none;
+    }
+    @media  screen and (max-width: 900px)  {
+        header div.menu, header div.menu ul,header div.menu ul li {
+            display: inline;
+        }
+        
+    }
+    header div.contenedor{
+        width: 100%;
+        display: inline;
+    }
+    @media screen and (max-width: 700px) {
+        header h1{
+            margin: 0;
+        
+        }
+        header h1 a {
+            padding: 0%;
+    
+        }
+    }
+    header div.contenedor{
+        display: flex;
+        place-content: space-between;
+    }
+    header div.contenedor nav{
+        display: none;
+    }
+    header div.contenedor nav.visible{
+        display: block;
+    }
+    #menu{
+        display: block;
+        color: blue;
+        background-color: #0f130c;
+        font-size: 1.2em;
+        font-weight: bold;
+        border: 3px solid ;
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        z-index: 9999;
+    }
+    #menu :hover{
+        color: #0f130c;
+        background-color: white;
+    }
+    #menu-cerrar{
+        display: none;
+    }
+    #menu.salir #menu-abrir{
+        display: none;
+    }
+    #menu.salir #menu-cerrar{
+        display:block;
+    
+    }
+    
+    header div.contenedor nav{
+        position: absolute;
+        top: 0%;
+        right: 0.5em;
+        height: 100%;
+        background-color: #0f130c;
+        padding-top: 0.5em;
+        padding-right: 0.8em;
+        opacity: 0.8;
+        color: white;
+        
+    
+    }
+.clase5{
+    background-color: aqua;
+    text-align: center;
+    image-orientation: flip;
+
+}
+.clase5 footer{
+    background-color: aqua;
+    text-align: center;
+    image-orientation: flip;
+}
