@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Documentos/GitHub/desktop-tutorial"
+		},
+		{
+			"path": "../hmtl.prueba"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "hmtl.prueba"
+	}
+}
