@@ -15,9 +15,9 @@ mysql = MySQL()
 # de datos MYSQL utilizamos el host localhost
 app.config['MYSQL_DATABASE_HOST']='localhost'
 # Indicamos el usuario, por defecto es user
-app.config['MYSQL_DATABASE_USER']='dais2015'
+app.config['MYSQL_DATABASE_USER']='root'
 # Sin contraseña, se puede omitir
-app.config['MYSQL_DATABASE_PASSWORD']='India1998'
+app.config['MYSQL_DATABASE_PASSWORD']=''
 # Nombre de nuestra BD
 app.config['MYSQL_DATABASE_BD']='sistema'
 # Creamos la conexión con los datos
