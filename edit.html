@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>editar</title>
+</head>
+<body>
+     {% turno in turnos %}
+<form method="post" action="/update" enctype="multipart/form-data">
+ ID:
+ <input type="text" value="{{ turno[0] }}" name="txtID" id="txtID">
+ Nombre:
+ <input type="text" value="{{ turno[1] }}" name="txtNombre" id="txtNombre"><br>
+ Apellido:
+ <input type="text" value="{{ turno[2] }}" name="txtapellido" id="txtapellido"><br>
+ Correo:
+ <input type="text" value="{{ turno[3] }}" name="txtCorreo" id="txtCorreo"><br>
+ Numero telefono:
+ <input type="text" value="{{ turno[4] }}" name="txtnumerotelefono" id="txtnumerotelefono"><br>
+
+
+ Foto:{{ empleado[3] }}
+ <input type="file" name="txtFoto" id="txtFoto"><br><br>
+
+ <input type="submit" value="Guardar">
+</form>
+{% endfor %}
+</body>
+</html>
